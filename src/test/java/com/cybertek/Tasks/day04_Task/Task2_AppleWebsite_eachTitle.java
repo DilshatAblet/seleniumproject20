@@ -1,4 +1,4 @@
-package com.cybertek.day04_Task;
+package com.cybertek.Tasks.day04_Task;
 
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package com.cybertek.day02_task;
+package com.cybertek.Tasks.day02_task;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

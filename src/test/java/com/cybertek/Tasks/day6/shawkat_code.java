@@ -7,11 +7,12 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class dat {
+public class shawkat_code {
 
 
     public static void verifyOrder(WebDriver driver, String name){
-        List<WebElement> listOfNames = driver.findElements(By.xpath("//div/table//*/td[2]"));
+
+        List<WebElement> listOfNames = driver.findElements(By.xpath("//div//tbody/tr[7]/td[2]"));
         boolean nameIsListed = false;
         for(WebElement eachElement : listOfNames){
             if(name.equals(eachElement.getText())){

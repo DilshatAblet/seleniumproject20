@@ -1,4 +1,4 @@
-package com.cybertek.tests;
+package com.cybertek.tests.day7_webtables;
 
 import com.cybertek.utilities.SmartBearUtilities;
 import com.cybertek.utilities.WebDriverFactory;
@@ -29,20 +29,27 @@ public class WebTableTasks {
 
 
     }
-
     @Test
     public void p3_verify_susans_order_date(){
 
-        WebElement susanDate = driver.findElement(By.xpath("//td[.='Susan McLaren']/following-sibling::td[3]"));
+        WebElement susansDate = driver.findElement(By.xpath("//td[.='Susan McLaren']/following-sibling::td[3]"));
 
-        String expectedDate ="01/05/2010";
-        String actualDate = susanDate.getText();
+        //System.out.println("susansDate = " + susansDate.getText());
 
-        Assert.assertTrue(actualDate.equals(expectedDate),"Actual Date is not same");
-        Assert.assertEquals(actualDate,expectedDate,"Actual date is not same");
+        String expectedDate = "01/05/2010";
+        String actualDate = susansDate.getText();
 
+        System.out.println("expectedDate = " + expectedDate);
 
+        //Assert
+        Assert.assertTrue(actualDate.equals(expectedDate), "Actual date is not equal to expected date");
+
+        Assert.assertEquals(actualDate, expectedDate, "Actual date is not equal to expected date");
+
+        // Assert.fail("I AM FAILING THIS TEST HERE ON PURPOSE");
+        //TODO:FIX THE LOCATOR ASAP
     }
+
 
 
 

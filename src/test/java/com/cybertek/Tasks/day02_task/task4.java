@@ -1,4 +1,4 @@
-package com.cybertek.day02_task;
+package com.cybertek.Tasks.day02_task;
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
